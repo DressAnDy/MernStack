@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 04: list và table</title>
+    <style>
+        .demo-table , .demo-table td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .demo-table td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        list: danh sách liệt kê
+        ul ol dl
+    -->
+    <!-- ol: ordered list: danh sách các thứ tự -->
+     <ol type="I" start = "0">
+        <li>Cà phê sữa</li>
+        <li>Cà phê đá</li>
+        <li>Cà phê muối</li>
+     </ol>
+     <!-- ul: unordered list : danh sách ko có thứ tự -->
+      <ul style="list-style-type: square;">
+        <li>Cà phê sữa</li>
+        <li>Cà phê đá</li>
+        <li>Cà phê muối</li>
+      </ul>
+      <!-- một lỗi sai của tất cả mọi người lúc mới học
+       
+      -->
+      <ul>
+        <li>
+            Cà Phê
+            <ul>
+                <li>Cà phê sữa</li>
+                <li>Cà phê đá</li>
+                <li>Cà phê muối</li>
+            </ul>
+        </li>
+
+        <li>
+            Rựu
+            <ul>
+                <li>Gin</li>
+                <li>Rum</li>
+                <li>Henessy</li>
+            </ul>
+        </li>
+      </ul>
+
+      <!-- 
+        table
+      -->
+        <table class="demo-table">
+            <thead></thead>
+            <tbody></tbody>
+            <tr></tr>  
+            <!-- hàng ngang -->
+             <tr>
+                <td colspan="2">1</td>
+                <!-- table data -->
+                <!-- <td>2</td> -->
+                <td rowspan="2">3</td>
+             </tr>
+             <tr>
+                <td>4</td>
+                <td>5</td>
+                <!-- <td>6</td> -->
+             </tr>
+             <tr>
+                <td colspan="3">7</td>
+                <!-- <td>8</td>
+                <td>9</td> -->
+             </tr>
+        </table>
+</body>
+</html>

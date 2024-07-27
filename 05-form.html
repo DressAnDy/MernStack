@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5: form - biểu ngữ</title>
+</head>
+<body>
+    <!-- form: biểu mẫu, là cách để thu thập thông tin
+    của người dùng 
+    -->
+    
+    <form action="">
+        <div>
+            <label for="username">Username: </label>
+            <input 
+                id = "username" 
+                type ="text" 
+                placeholder="nhập username nhé" 
+                name="username">
+        </div>
+
+        <div>
+            <label for="password">Password: </label>
+            <input 
+                id = "password" 
+                type ="password" 
+                placeholder="nhập password nhé" 
+                name="password">
+        </div>
+        <!-- 
+            Những thẻ input hay gặp
+        -->
+        <input type="email">
+        <input type="number">
+        <input type="range" min = "0" max="10" step="1">
+        <input type="date">
+        <input type="color">
+        <input type="file">
+        <!-- bản chọn giới tính-->
+        <div>
+            <label for="male">Nam</label>
+            <input id = "male" type="radio" name="gender" value="1">
+            <label for="female">Nữ</label>
+            <input id = "female" type="radio" name ="gender" value="2">
+        </div>
+        
+        <!-- select -->
+         <select name="car" id="car">
+            <option value="1">BMW</option>
+            <option value="2" selected>Audi</option>
+            <option value="3">Mec</option>
+         </select>
+        
+        <textarea style="min-width: 200px; max-width: 200px;"></textarea>
+         <!-- fielset -->
+         <fieldset>
+            <legend>Hello</legend>
+            <p>Xin chào chúng mày</p>
+         </fieldset>
+         <!-- checkbox -->
+         <div>
+            <label for="agree">Tôi Đồng Ý</label>
+            <input id="agree" type="checkbox" value="gay" name="isGay">
+         </div>
+        <button type="submit">GỬI</button>
+    </form>
+
+</body>
+</html>

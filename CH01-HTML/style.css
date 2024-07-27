@@ -1,0 +1,45 @@
+
+a{
+    color: red;
+}
+
+.demo-status{
+    color: teal;
+}
+
+.demo-status:active{
+    color: blue p !important;
+}
+
+.demo-status:hover{
+    /* Khi sử dụng thì sẽ ưu tiên cái hover hơn */
+    color: purple;
+}
+/* demo-btn */
+.demo-btn{
+    display: inline-block;
+    border: 1px solid black;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding: 10px 15px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.demo-btn:hover{
+    color: white;
+    background-color: black;
+}
+
+/* 
+    model box
+border: đường viền
+padding: khoảng cách từ viền vào content
+content: nội dung
+margin: khoảng cách từ viền so với các vật thể khác ( không ngon , hạn chế , đừng làm dụng
+)
+
+*/

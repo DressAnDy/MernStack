@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 03 - a tag hacking</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <!-- redirect -->
+    <a href="#abc" target="">click me</a>
+    <!-- link status(pseudo class) 
+        unvisited: chưa bấm vào lần nào , chưa ghé thăm(blue)
+        active: đang đè chuột(red)
+        visited: đã từng được truy cập (purple)
+        hover: đưa chuột vào (none)
+    -->
+
+    <!-- 
+    modelBox:
+        padding: đoạn từ viền đến chữ
+        margin: đoạn từ đường viền đi ra
+        border: đường viền
+    -->
+
+
+    <!--
+        tính margin khi nói về chiếm dụng khoảng cách trong size web
+    -->
+    <a class="demo-status" href="#">Click Me!</a>
+    <!-- button -->
+    <button>Nút nè</button>
+    <a class="demo-btn" href="mailto:nhat7430@gmail.com">Send Nude</a>
+
+    <!--
+        thẻ a dùng làm banner 
+     -->
+    <a href="https://www.facebook.com">
+        <img src="./logofpt.jpg" alt="hình đẹp">
+    </a>
+</body>
+</html>
