@@ -26,6 +26,24 @@ let getProfile = () =>{
     });
 };
 
+getProfile().then((value) => {
+    console.log(value);
+    getArticle().then((value) => {
+        console.log(value);
+    });
+});
+
+
+getProfile().then((value) => {
+    console.log(value);
+    return getArticle();
+}).then((value) => {
+    console.log(value);
+});
+
+
+
+
 let getArticle = () =>{
     return new Promise((resolve,reject) => {
         setTimeout(() => {
