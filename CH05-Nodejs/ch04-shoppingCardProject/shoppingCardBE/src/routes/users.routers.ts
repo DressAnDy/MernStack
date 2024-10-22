@@ -1,28 +1,14 @@
 import express from 'express'
+import { loginController, registerController } from '~/Controllers/users.controllers'
+import { loginValidator } from '~/middlewares/users.middlewares'
 
 const userRouter = express.Router()
 //setup middlware
+// /users/login
 
-userRouter.use(
-  (req, res, next) => {
-    console.log('Time', Date.now())
-    return next()
-    res.status(400).send('Not allowrd')
-    console.log('ahiihi')
-  },
-  (res, req, next) => {
-    console.log('Time2', Date.now())
-    next()
-  }
-)
+userRouter.post('/login', loginValidator, loginController)
 
-userRouter.get('/get-me', (req, res) => {
-  res.json({
-    data: {
-      name: 'Điệp',
-      yob: 1999
-    }
-  })
-})
+//Chức năng đăng ký
+userRouter.post('/register', registerController)
 
 export default userRouter

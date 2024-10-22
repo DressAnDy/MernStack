@@ -1,9 +1,12 @@
 import express from 'express'
-import userRouter from './users.routers'
+import userRouter from './routes/users.routers'
+import databaseService from './services/dabase.services'
 
 const app = express()
-const PORT = 3000
-
+const PORT = 4000
+databaseService.connect()
+//Cho server chạy middlewares chuyển json
+app.use(express.json()) //Kết nối database
 //dựng userRouter
 
 //server dùng userRouter

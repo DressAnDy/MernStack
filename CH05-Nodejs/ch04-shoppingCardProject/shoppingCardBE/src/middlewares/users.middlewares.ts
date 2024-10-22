@@ -13,7 +13,17 @@ import { Request, Response, NextFunction } from 'express'
 //vậy middlewares này sẽ chạy khi người dùng muốn login
 //và middlewares này sẽ kiểm tra email và password
 
-const loginValidator = (req: Request, res: Response, next: NextFunction) => {
-  console.log(req.body)
-  next()
+export const loginValidator = (req: Request, res: Response, next: NextFunction) => {
+  //   console.log(req.body)
+  const { email, password } = req.body //Lấy email và password trong request
+  //Nếu 1 trong 2 không được gửi lên
+
+  if (!email || !password) {
+    res.status(400).send({
+      message: 'Missing email or password'
+    })
+  } else {
+    next()
+  }
+  //Nếu không bị gì thì next
 }
