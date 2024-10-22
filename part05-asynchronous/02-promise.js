@@ -63,3 +63,13 @@
 // wallet = 7000;
 
 // //Để hứa phái có điều kiện
+
+
+
+
+// Demo Async
+getProfile.then((value) => {
+    console.log(value);
+    
+})
+//Đồng bộ
